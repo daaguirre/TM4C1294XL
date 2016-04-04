@@ -1,0 +1,8 @@
+--cpu Cortex-M4.fp
+".\objects\pwm.o"
+"..\driverlib.lib"
+".\objects\startup.o"
+--library_type=microlib --strict --scatter "..\init.sct"
+--entry Reset_Handler --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\pwm.map" -o .\Objects\pwm.axf
